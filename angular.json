@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "prerender": {
+              "discoverRoutes": false
+            },
             "outputPath": "dist/a17-ssr",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -102,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
